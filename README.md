@@ -26,7 +26,6 @@ The goal of this project is to design and deploy a production-ready VPC that sup
 ---
 
 ## ⚙️ Implementation Steps
-Detailed steps can be found in [`implementation_steps.md`](implementation_steps.md).  
 Key steps include:
 1. Create VPC and assign CIDR block.
 ![Subnets](/vpc2.jpeg)
