@@ -20,8 +20,7 @@ The goal of this project is to design and deploy a production-ready VPC that sup
 - Each AZ contains:
   - Database Subnet
   - Application Subnet
-  - Web Subnet (with NAT Gateway)
-  - Reserved Tier (for future scaling)
+  - Reserved Tier 
 
 ---
 
@@ -29,24 +28,22 @@ The goal of this project is to design and deploy a production-ready VPC that sup
 Detailed steps can be found in [`implementation_steps.md`](implementation_steps.md).  
 Key steps include:
 1. Create VPC and assign CIDR block.
+![Subnets](/vpc2.jpeg)
 2. Create public and private subnets in 3 AZs.
-3. Attach an **Internet Gateway**.
-4. Configure **NAT Gateways** in each AZ.
+![Subnets](/vpc4.jpeg)
+![enable auto assign ip](/vpc9.jpeg) 
+4. Attach an **Internet Gateway**.
+![igw](/vpc5.jpeg) 
 5. Create and associate **Route Tables**.
-6. Deploy a **Bastion Host** for secure SSH access.
-7. Test connectivity across subnets and internet.
+![Route Table](/vpc6.jpeg)
 
----
+-associate the public subnet with the route table
+![Associate rt](/vpc7.jpeg) 
 
-## 📸 Screenshots
-Some highlights from my implementation:
-
-| Description       | Screenshot |
-|-------------------|------------|
-| VPC Architecture  | ![VPC](screenshots/vpc-design.png) |
-| Subnets in AZs    | ![Subnets](screenshots/subnets.png) |
-| NAT Gateway Setup | ![NAT](screenshots/nat-gateway.png) |
-| Route Tables      | ![Routes](screenshots/route-tables.png) |
+-edit route 
+![edit route](/vpc8.jpeg) 
+8. Deploy a **Bastion Host**.
+![public subnet](/vpc10.jpeg) 
 
 ---
 
@@ -54,7 +51,7 @@ Some highlights from my implementation:
 - AWS VPC Design
 - Subnetting & CIDR Planning
 - High Availability Architecture
-- Secure Network Access (NAT, Bastion Host)
+- Secure Network Access 
 - Internet Gateway & Route Tables
 
 ---
