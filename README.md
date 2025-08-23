@@ -28,6 +28,7 @@ The goal of this project is to design and deploy a production-ready VPC that sup
 ## ⚙️ Implementation Steps
 Key steps include:
 1. Create VPC and assign CIDR block.
+![vpc](/vpc1.jpeg)
 ![Subnets](/vpc2.jpeg)
 2. Create public and private subnets in 3 AZs.
 ![Subnets](/vpc4.jpeg)
