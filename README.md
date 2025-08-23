@@ -20,6 +20,7 @@ The goal of this project is to design and deploy a production-ready VPC that sup
 - Each AZ contains:
   - Database Subnet
   - Application Subnet
+  - Web subnet
   - Reserved Tier 
 
 ---
