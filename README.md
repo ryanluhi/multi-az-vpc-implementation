@@ -12,7 +12,7 @@ The goal of this project is to design and deploy a production-ready VPC that sup
 ---
 
 ## 🏗️ Architecture
-![VPC Architecture](/vpcdesign.jpeg)
+![VPC Architecture](/vpcdesign.png)
 
 ### CIDR Allocation
 - **VPC CIDR:** `10.16.0.0/16`
